@@ -13,7 +13,8 @@ Det syns ganska tydligt att den härdade imagen är **mycket mindre**, vilket mi
 
 ### Vulnerable pod
 
-![Test-pod-badpod](image.png)
+<img width="808" height="360" alt="image" src="https://github.com/user-attachments/assets/97273d83-d8ab-4035-b886-ed404116187a" />
+
 
 ### Hardened pod
 
