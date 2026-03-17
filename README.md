@@ -27,6 +27,8 @@ Det syns ganska tydligt att den härdade imagen är **mycket mindre**, vilket mi
 <img width="800" height="454" alt="image" src="https://github.com/user-attachments/assets/2960b9bd-fccc-4220-9153-c26a9a298d75" />
 
 ### After:
+<img width="805" height="459" alt="image" src="https://github.com/user-attachments/assets/fd96be95-4726-430f-b1b2-367cc3e99dc2" />
+
 
 ## Reflektion
 
