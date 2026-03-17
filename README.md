@@ -1,1 +1,28 @@
 # lab2-container-security
+
+## Docker image size comparison
+
+| Image             | Image Size | Runtime Size |
+| ----------------- | ---------- | ------------ |
+| my-app:hardened   | 206MB      | 50.4MB       |
+| my-app:vulnerable | 1.46GB     | 378MB        |
+
+Det syns ganska tydligt att den härdade imagen är **mycket mindre**, vilket minskar attackytan och gör den snabbare att deploya.
+
+## Test av pods
+
+### Vulnerable pod
+
+![Test-pod-badpod](image.png)
+
+### Hardened pod
+
+![Test-pod-hardenedpod](image-1.png)
+
+## Reflektion
+
+Jag lärde mig att container-säkerhet inte bara handlar om runtime utan börjar redan vid hur imagen byggs. Mindre images innebär färre beroenden, vilket direkt minskar risken för sårbarheter. Jag såg också hur enkelt det är att råka inkludera onödiga paket som ökar attackytan utan att man tänker på det.
+
+SBOM är viktigt eftersom det ger full insyn i exakt vilka komponenter som finns i en container. Det gör det möjligt att snabbt identifiera sårbarheter och förstå vad som faktiskt körs i produktion. Utan SBOM blir det i princip gissningar när något går fel eller när en CVE dyker upp.
+
+Policy enforcement med Gatekeeper förändrar arbetssättet ganska mycket. Istället för att manuellt granska konfigurationer så tvingas säkerhetsregler igenom automatiskt. Det gör att fel stoppas direkt vid deploy istället för i efterhand. Samtidigt kräver det att man tänker mer på policies från början, annars blir det bara frustration när saker blockeras.
