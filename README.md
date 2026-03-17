@@ -21,7 +21,12 @@ Det syns ganska tydligt att den härdade imagen är **mycket mindre**, vilket mi
 <img width="432" height="79" alt="image" src="https://github.com/user-attachments/assets/0bfd3040-63e1-4d12-a90d-3f04a111f369" />
 
 
-### trivy scan results (se "scan-before" och "scan after")
+## trivy scan results:
+
+### Before:
+<img width="800" height="454" alt="image" src="https://github.com/user-attachments/assets/2960b9bd-fccc-4220-9153-c26a9a298d75" />
+
+### After:
 
 ## Reflektion
 
